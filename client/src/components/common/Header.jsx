@@ -1,4 +1,6 @@
 import { colors, Stack } from "@mui/material";
+import Navbar from "./Navbar";
+import { IoMenu } from "react-icons/io5";
 
 const Header = () => {
   return (
@@ -21,12 +23,13 @@ const Header = () => {
         justifyContent={"center"}
         width={"550px"}
         bgcolor={"aliceblue"}
-        color={"white"}
+        // color={"white"}
         zIndex={2}
         height={96}
       >
-      NavBar
-      </Stack>
+      <Navbar/>
+            </Stack>
+      <IoMenu size={36} className="image-icon"/>
     </Stack>
   );
 };
