@@ -1,15 +1,14 @@
 import { Stack, Typography } from "@mui/material";
 import { IoIosMore } from "react-icons/io";
 import PostOne from "./post/PostOne";
-import PostTwo from "./post/PostTwo";
 
 const Post = () => {
   return (
-    <>
+    
       <Stack
-        flexDirection={"row"}
-        justifyContent={"space-between"}
-        borderBottom={"3px solid gray"}
+        flexDirection="row"
+        justifyContent="space-between"
+        borderBottom="3px solid gray"
         p={2}
         mx={"auto"}
         sx={{
@@ -18,11 +17,11 @@ const Post = () => {
             boxShadow: "10px 10px 10px gray",
           },
           transition: "all ease-in-out 0.3s",
+          width:"50%"
         }}
       >
         <Stack flexDirection={"row"} gap={2}>
           <PostOne/>
-          <PostTwo/>
         </Stack>
         <Stack
           flexDirection={"row"}
@@ -40,7 +39,7 @@ const Post = () => {
           <IoIosMore size={28} />
         </Stack>
       </Stack>
-    </>
+   
   );
 };
 
